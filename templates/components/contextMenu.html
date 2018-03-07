@@ -1,0 +1,30 @@
+
+{% macro code() %}
+    <div style="position: relative">
+        <ul tabindex="0" class="dropdown-menu react-dropdown-entry-container" style="display:block">
+            <li class="react-dropdown-entry menu-checkbox">
+                <span>
+                    <input type="checkbox"
+                           id="115e441c-31c0-44be-a645-9062b23994c0"
+                           value="on">
+                    <label for="115e441c-31c0-44be-a645-9062b23994c0">Expand all rows</label>
+                </span>
+            </li>
+            <li class="react-dropdown-entry"><a class="clickable">Edit Table</a></li>
+        </ul>
+    </div>
+{% endmacro %}
+
+<div class="container">
+    <h3>Code</h3>
+    <xmp class="card">
+
+        {{ code() }}
+
+    </xmp>
+
+    <h3>EXAMPLE</h3>
+    <div style="position: relative; height: 100px">
+        {{ code() }}
+    </div>
+</div>

@@ -1,0 +1,34 @@
+
+{% macro code() %}
+    <div class="dropdown react-dropdown">
+        <button id="e555e7c1-8034-492b-8168-2e00ada4f9b1"
+                type="button"
+                class="btn btn-default dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="true">
+            Tools
+        </button>
+        <ul tabindex="0" class="dropdown-menu react-dropdown-entry-container">
+            <li class="react-dropdown-entry menu-checkbox"><span>
+                <input type="checkbox" id="399a6ee1-2653-4c78-ad1a-8bdd1da626e7" value="on">
+                <label for="399a6ee1-2653-4c78-ad1a-8bdd1da626e7">Expand all rows</label></span>
+            </li>
+            <li class="react-dropdown-entry"><a class="clickable">Edit Table</a></li>
+        </ul>
+    </div>
+{% endmacro %}
+
+<div class="container">
+    <h3>Code</h3>
+    <xmp class="card">
+
+        {{ code() }}
+
+    </xmp>
+
+    <h3>EXAMPLE</h3>
+    <div style="position: relative">
+        {{ code() }}
+    </div>
+</div>
